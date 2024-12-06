@@ -5,8 +5,8 @@ terraform.
 
 ```
 provider "aws" {
-  alias = "us-east-1"
-  region = "us-east-1"
+  alias = "us-west-2"
+  region = "us-west-2"
 }
 
 provider "aws" {
@@ -17,7 +17,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami = "ami-0123456789abcdef0"
   instance_type = "t2.micro"
-  provider = "aws.us-east-1"
+  provider = "aws.us-west-2"
 }
 
 resource "aws_instance" "example2" {

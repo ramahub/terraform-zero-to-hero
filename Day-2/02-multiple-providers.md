@@ -9,7 +9,7 @@ You can use multiple providers in one single terraform project. For example,
 
 ```
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
 provider "azurerm" {
