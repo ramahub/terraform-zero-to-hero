@@ -17,7 +17,7 @@ variable "ami_id" {
 
 # Configure the AWS provider using the input variables
 provider "aws" {
-  region      = "us-west-2"
+  region      = "eu-west-2"
 }
 
 # Create an EC2 instance using the input variables

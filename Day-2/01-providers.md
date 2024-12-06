@@ -9,7 +9,7 @@ Here is an example of how to use the aws provider in a Terraform configuration:
 
 ```hcl
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-2"
 }
 
 resource "aws_instance" "example" {
@@ -18,7 +18,7 @@ resource "aws_instance" "example" {
 }
 ```
 
-In this example, we are first defining the aws provider. We are specifying the region as us-west-2. Then, we are defining the `aws_instance` resource. We are specifying the `AMI ID` and the `instance type`.
+In this example, we are first defining the aws provider. We are specifying the region as eu-west-2. Then, we are defining the `aws_instance` resource. We are specifying the `AMI ID` and the `instance type`.
 
 When Terraform runs, it will first install the aws provider. Then, it will use the aws provider to create the virtual machine.
 
@@ -45,7 +45,7 @@ This is the most common way to configure providers. The provider configuration b
 
 ```hcl
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-2"
 }
 
 resource "aws_instance" "example" {
@@ -62,7 +62,7 @@ You can also configure providers in a child module. This is useful if you want t
 module "aws_vpc" {
   source = "./aws_vpc"
   providers = {
-    aws = aws.us-west-2
+    aws = aws.eu-west-2
   }
 }
 
